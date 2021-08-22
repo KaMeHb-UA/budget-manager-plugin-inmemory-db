@@ -6,5 +6,5 @@ const db = Object.create(null);
  */
 export default table => {
     if(!(table in db)) db[table] = [];
-    return db.table;
+    return db[table];
 }
